@@ -68,7 +68,7 @@
                                 <button type="submit"><span class="icon_search"></span></button>
                             </form>
                         </div>
-                        <div class="shop__sidebar__accordion">
+                        <div class="shop__sidebar__accordion" id="side">
                             <div class="accordion" id="accordionExample">
                                 <div class="card">
                                     <div class="card-heading">
@@ -322,18 +322,22 @@
 
 function Search() {
   // Declare variables
-  let input, filter, li, a, i,h6, textValue;
+  let input, filter, li, a,side, i,h6, textValue;
   input = document.getElementById("inputt");
   filter = input.value.toUpperCase();
-  list = document.getElementsByClassName("prodr")
+  list = document.getElementsByClassName("prodr");
+  side=document.getElementById("side")
   for (i = 0; i < list.length; i++) {
     h6 = list[i].getElementsByTagName("h6")[0]
     textValue = h6.innerHTML;
     if (textValue.toUpperCase().indexOf(filter) > -1) {
       list[i].style.display = "";
+     side.style.display="";
     }
      else {
       list[i].style.display = "none";
+      
+       side.style.display="none"
       }
   }
 }
