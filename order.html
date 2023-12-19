@@ -1,0 +1,112 @@
+   <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sales</title>
+
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+
+*{
+    box-sizing: border-box;
+ 
+}
+div{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    font-family: Sans-Serif;
+   
+}
+form{
+    background: white;
+    border:none;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.input{
+    padding: 10px 12px;
+    background: white;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    
+}
+.sign{
+    text-align: center;
+    font-size: 25px;
+  color: grey;
+}
+textarea{
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+#subBtn{
+    width: 100%;
+    padding: 10px 12px;
+    color: white;
+    background:#4eba00;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.left{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border-radius: 50%;
+    color: white;
+    background: skyblue;
+    padding: 8px 8px;
+    border: none;
+  cursor: pointer;
+
+}
+</style>
+
+<body onload="alert('Make sure you provide us with the right information.')">
+    
+<div>
+    <p class="sign">Order</p>
+    <form action="https://formspree.io/f/xbjbobwv"
+  method="POST" class="form">
+        
+        
+      <label for="name">
+          <p>Name</p>
+          </label>
+        <input type="text" id="name" placeholder="Enter name" class="input" name="Order_name" required>
+        
+              <label for="email">
+          <p>Email</p>
+          </label>
+        <input type="email" name="email" id="Order_email" placeholder="Enter email" class="input" required>
+ 
+                
+            <label for="message">
+          <p>Message</p>
+          </label>   
+        <textarea id="message" rows="4" placeholder="How can we help you?" class="textarea" name="message"></textarea>
+
+      <br>
+      <br>
+      <br>
+        <button id="subBtn"  type="submit">Order Now</button>
+    </form>
+
+    <button class="left" onclick="Left()"><i class="fa fa-arrow-left"></i></button>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    </body>
+    </html>

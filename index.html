@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sales</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link href="animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+
+<body onload="Index()">
+    <div id="preloader" class="preloader">
+        <p class="animate__animated animate__fadeInUp">Sales</p>
+    </div>
+    <!-- index -->
+    <div id="index" style="display:none;">
+        <button class="tp" onclick="window.location.href='#'"><i class="fa fa-arrow-up"></i></button>
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top d-flex align-items-center">
+            <div class="container d-flex align-items-center justify-content-between">
+                <h1 class="logo"><a href="./index.html">Sales</a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+        <section id="hero">
+            <div class="hero-container">
+                <div class="carousel-item active">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2 class="animate__animated animate__fadeInDown">Shop Our New Collection</h2>
+                            <p class="animate__animated animate__fadeInUp" style="text-transform: uppercase;">From high to low,classic and modern, we have you covered</p>
+                            <a href="./shop.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <!-- start features Area -->
+        <section class="features-area section_gap">
+            <div class="container">
+                <div class="row features-inner">
+                    <!-- single features -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-features">
+                            <div class="f-icon">
+                                <img src="img/features/f-icon1.png" alt="">
+                            </div>
+                            <h6>Free Delivery</h6>
+                            <p>Free Shipping on all order</p>
+                        </div>
+                    </div>
+                    <!-- single features -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-features">
+                            <div class="f-icon">
+                                <img src="img/features/f-icon2.png" alt="">
+                            </div>
+                            <h6>Return Policy</h6>
+                            <p>Free Shipping on all order</p>
+                        </div>
+                    </div>
+                    <!-- single features -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-features">
+                            <div class="f-icon">
+                                <img src="img/features/f-icon3.png" alt="">
+                            </div>
+                            <h6>24/7 Support</h6>
+                            <p>Free Shipping on all order</p>
+                        </div>
+                    </div>
+                    <!-- single features -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-features">
+                            <div class="f-icon">
+                                <img src="img/features/f-icon4.png" alt="">
+                            </div>
+                            <h6>Secure Payment</h6>
+                            <p>Free Shipping on all order</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end features Area -->
+        <br>
+        <br>
+        <!-- Product Section Begin -->
+        <section class="product spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="filter__controls">
+                            <li class="active" data-filter="*">Latest Products</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row product__filter" id="latest">
+                </div>
+            </div>
+        </section>
+        <!-- Product Section End -->
+        <br>
+        <br>
+        <br>
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class="cta">
+            <div class="container">
+                <div class="text-center" data-aos="zoom-in">
+                    <h3>Order for a free portrait</h3>
+                    <p> You can now order for a free artwork portrait of your favorite picture. Just order now and your portrait would be made.</p>
+                    <a class="cta-btn" href="./order.html">Order Now</a>
+                </div>
+            </div>
+        </section><!-- End Cta Section -->
+        <br>
+        <br>
+        <!-- Categories Section Begin -->
+        <section class="categories spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="categories__text">
+                            <h2>Clothings Hot <br /> <span>Kitchenware</span> <br /> Accessories</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="categories__hot__deal">
+                            <img src="img/products/knife-holder.jpg" alt="" style="max-width:120px;max-height: 400px;">
+                            <div class="hot__deal__sticker">
+                                <span>Sale Of</span>
+                                <h5>GHC99.99</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-1">
+                        <div class="categories__deal__countdown">
+                            <span>Deal Of The Week</span>
+                            <h2>Knife Holder</h2>
+                            <div class="categories__deal__countdown__timer" id="countdown">
+                                <div class="cd-item">
+                                    <span>3</span>
+                                    <p>Days</p>
+                                </div>
+                                <div class="cd-item">
+                                    <span>1</span>
+                                    <p>Hours</p>
+                                </div>
+                                <div class="cd-item">
+                                    <span>50</span>
+                                    <p>Minutes</p>
+                                </div>
+                                <div class="cd-item">
+                                    <span>18</span>
+                                    <p>Seconds</p>
+                                </div>
+                            </div>
+                            <a href="shop.html" class="primary-btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Categories Section End -->
+        <br>
+        <br>
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="row contact-info">
+                    <div class="col-md-4">
+                        <div class="contact-address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h3>Location</h3>
+                            <address>Dansoman</address>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-phone">
+                            <i class="bi bi-phone"></i>
+                            <h3>Phone Number</h3>
+                            <p><a href="tel:0243126855">0243126855</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-email">
+                            <i class="bi bi-envelope"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:rachelakrofi7@gmail.com">info@example.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <form action="https://formspree.io/f/mdorvgba" method="POST" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+                </div>
+            </div>
+        </section><!-- End Contact Section -->
+        <br>
+        <br>
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-info">
+                                <h3>Sales</h3>
+                                <p>
+                                    Dansoman<br>Ghana<br><br>
+                                    <strong>Phone:</strong> 0243126855<br>
+                                    <strong>Email:</strong> info@example.com<br>
+                                </p>
+                                <div class="social-links mt-3">
+                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                                    <a href="#" class="google-plus"><i class="fa fa-skype"></i></a>
+                                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="fa fa-chevron-right"></i> <a href="#">Home</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="#contact">Contact us</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="#">Services</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="#">Terms of service</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Our Sales</h4>
+                            <ul>
+                                <li><i class="fa fa-chevron-right"></i> <a href="#">Women</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="#">Men</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="#">Kids</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="#">Appliances</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="#">Shoes</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6 footer-newsletter">
+                            <h4>Our Newsletter</h4>
+                            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                            <form action="" method="post">
+                                <input type="email" name="email"><input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>ASVL</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    <!-- All the links in the footer should remain intact. -->
+                    <!-- You can delete the links only if you purchased the pro version. -->
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/groovin-free-bootstrap-theme/ -->
+                    Designed by <a href="#">ASVL</a>
+                </div>
+            </div>
+        </footer><!-- End Footer -->
+    </div>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="product.json"></script>
+</body>
+
+</html>
